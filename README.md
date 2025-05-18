@@ -24,13 +24,8 @@
         pip install -r requirements.txt
         ```
 
-3.  **Set up the Database:**
 
-    * **SQLite:**
-
-        We are using the SQLite database, so no additional setup is required, the database will be automatically generated at a specified location. If you want to specify a different location, modify the `SQLALCHEMY_DATABASE_URL` in `database.py`:
-
-4.  **Start the Application:**
+3.  **Start the Application:**
 
     * **Linux/Windows:**
 
@@ -38,10 +33,16 @@
         uvicorn main:app --reload
         ```
 
-6.  **View the API Documentation:**
+4.  **View the API Documentation:**
 
 
 
       **Once the application is running, you can view the automatically generated API documentation at:**
 
         http://localhost:8000/docs
+
+
+
+* **Additional info:**
+
+  We are using the SQLite database, so no additional setup is required, the database will be automatically generated at a specified location. If you want to specify a different location, modify the `SQLALCHEMY_DATABASE_URL` in `database.py`:
